@@ -1,4 +1,5 @@
 import './components/base.css';
 import 'lit';
-import "./components/ilw-page";
-import "./components/ilw-hero";
+
+import '@illinois-toolkit/ilw-page';
+import '@illinois-toolkit/ilw-hero';

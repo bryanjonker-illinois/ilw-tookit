@@ -3,6 +3,9 @@ import { defineConfig } from 'vite'
 // https://vitejs.dev/config/
 export default defineConfig({
   root: 'src',
+  resolve: {
+    dedupe: ['lit']
+  },
   build: {
     outDir: '../dist',
     lib: {
@@ -12,7 +15,6 @@ export default defineConfig({
       formats: ['es', 'cjs'],
     },
     rollupOptions: {
-      external: ['lit'],
       output: {
         assetFileNames: (chunkInfo) => {
           if (chunkInfo.name === 'style.css') return 'toolkit.css';

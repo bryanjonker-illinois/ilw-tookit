@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="il-toolkit">
+<!--
+This page exists just to test the bundled toolkit files, to make sure
+they work correctly in a CDN scenario.
+-->
+<head>
+    <title>Toolkit Bundle Test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="//cdn.brand.illinois.edu/favicon.ico">
+    <link rel="apple-touch-icon" href="//cdn.brand.illinois.edu/touch-icon-40x40.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="//cdn.brand.illinois.edu/touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="//cdn.brand.illinois.edu/touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="//cdn.brand.illinois.edu/touch-icon-180x180.png">
+    <link rel="stylesheet" href="//cdn.brand.illinois.edu/illinois.css">
+    <link rel="stylesheet" href="dist/toolkit.css">
+    <script type="module" src="dist/toolkit.js"></script>
+</head>
+<body>
+<ilw-page>
+    <header slot="header">
+        <ilw-hero align="left" focus="bottom" shadow theme="white">
+            <img src="https://picsum.photos/1920/1280" alt="" slot="background">
+            <h1>Innovating solutions every year</h1>
+            <ul class="ilw-buttons ilw-theme-white">
+                <li>
+                    <a href="#">Link 1</a>
+                </li>
+                <li>
+                    <a href="#">Link 2</a>
+                </li>
+                <li>
+                    <a href="#">Link 3</a>
+                </li>
+            </ul>
+        </ilw-hero>
+    </header>
+    <main>
+        <h2>Main Content</h2>
+    </main>
+    <footer slot="footer">
+        <h2>Footer</h2>
+    </footer>
+</ilw-page>
+</body>
+</html>
